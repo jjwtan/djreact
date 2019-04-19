@@ -1,0 +1,17 @@
+{
+    "python.pythonPath": "C:\\Users\\Ran\\AppData\\Local\\Programs\\Python\\Python37-32",
+    "python.venvPath": "C:\\Users\\Ran\\.virtualenvs\\backend-XXBe-JmJ\\Scripts",
+    "python.linting.pylintPath": "C:\\Users\\Ran\\.virtualenvs\\backend-XXBe-JmJ\\Scripts\\pylint",
+    "python.linting.pep8Path": "C:\\Users\\Ran\\.virtualenvs\\backend-XXBe-JmJ\\Scripts\\pep8",
+    "python.formatting.autopep8Path": "C:\\Users\\Ran\\.virtualenvs\\backend-XXBe-JmJ\\Scripts\\autopep8",
+    "editor.formatOnSave": true,
+    "python.linting.pep8Enabled": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.autoComplete.extraPaths": [
+        "C:\\Users\\Ran\\.virtualenvs\\backend-XXBe-JmJ\\lib\\site-packages",
+    ]
+}
