@@ -15,7 +15,7 @@ class CustomForm extends React.Component {
 
         switch (requestType) {
             case 'post':
-                return axios.post('http://42.60.83.196:1224/api/', {
+                return axios.post('http://localhost:1224/api/', {
                     title: title,
                     content: content,
                     image_url: image,
@@ -24,7 +24,7 @@ class CustomForm extends React.Component {
                     .then(res => console.log(res))
                     .catch(err => console.err(err))
             case 'put':
-                return axios.put(`http://42.60.83.196:1224/api/${articleID}/`, {
+                return axios.put(`http://localhost:1224/api/${articleID}/`, {
                     title: title,
                     content: content,
                     image_url: image,

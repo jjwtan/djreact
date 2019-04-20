@@ -10,7 +10,7 @@ class ArticleList extends React.Component {
     }
 
     fetchArticles = () => {
-        axios.get("http://42.60.83.196:1224/api/").then(res => {
+        axios.get("http://localhost:1224/api/").then(res => {
             this.setState({
                 articles: res.data
             });
@@ -21,10 +21,6 @@ class ArticleList extends React.Component {
         this.fetchArticles();
     }
 
-    // componentDidUpdate(){
-    //     this.fetchArticles();
-    // }
-
     render() {
         return (
             <div>
@@ -33,7 +29,7 @@ class ArticleList extends React.Component {
                 <h2>Create Post</h2>
                 <CustomForm
                     requestType="post"
-                    btnText="Create" />
+                    btnText="Create"/>
             </div>
         );
     }
