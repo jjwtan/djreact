@@ -9,15 +9,21 @@ class ArticleList extends React.Component {
         articles: []
     }
 
-    componentDidMount() {
-        axios.get('http://42.60.83.196:1224/api/')
-            .then(res => {
-                this.setState({
-                    articles: res.data
-                });
-                console.log(res.data);
-            })
+    fetchArticles = () => {
+        axios.get("http://42.60.83.196:1224/api/").then(res => {
+            this.setState({
+                articles: res.data
+            });
+        });
     }
+
+    componentDidMount() {
+        this.fetchArticles();
+    }
+
+    // componentDidUpdate(){
+    //     this.fetchArticles();
+    // }
 
     render() {
         return (
@@ -25,9 +31,9 @@ class ArticleList extends React.Component {
                 <Articles data={this.state.articles} />
                 <br />
                 <h2>Create Post</h2>
-                <CustomForm 
+                <CustomForm
                     requestType="post"
-                    btnText="Create"/>
+                    btnText="Create" />
             </div>
         );
     }

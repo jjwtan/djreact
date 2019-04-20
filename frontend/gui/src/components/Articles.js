@@ -19,7 +19,7 @@ const Articles = (props) => {
                 onChange: (page) => {
                     console.log(page);
                 },
-                pageSize: 3,
+                pageSize: 4,
             }}
             dataSource={props.data}
             renderItem={item => (
